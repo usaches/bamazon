@@ -21,7 +21,7 @@ function bamazon() {
         var table = new Table(
             {
                 head: ["Product ID".cyan.bold, "Product Name".cyan.bold, "Department Name".cyan.bold, "Price".cyan.bold, "Quantity".cyan.bold],
-                colWidths: [12, 75, 20, 12, 12],
+                colWidths: [12, 30, 20, 12, 12],
             });
         for (var i = 0; i < res.length; i++) {
             table.push(
