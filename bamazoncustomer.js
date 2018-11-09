@@ -1,7 +1,7 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
-var colors = require('colors');
-var Table = require('cli-table');
+var colors = require("colors");
+var Table = require("cli-table");
 var connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
@@ -20,7 +20,7 @@ function bamazon() {
         console.log(res.length)
         var table = new Table(
             {
-                head: ["Product ID".cyan.bold, "Product Name".cyan.bold, "Department Name".cyan.bold, "Price".cyan.bold, "Quantity".cyan.bold],
+                head: ["Product ID".green.bold, "Product Name".green.bold, "Department Name".green.bold, "Price".green.bold, "Quantity".green.bold],
                 colWidths: [12, 30, 20, 12, 12],
             });
         for (var i = 0; i < res.length; i++) {
